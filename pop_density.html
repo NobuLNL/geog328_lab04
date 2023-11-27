@@ -85,7 +85,7 @@
     </div>
     <div class='map-overlay' id='legend'></div>
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
+        mapboxgl.accessToken = 'pk.eyJ1Ijoibm9idWxubCIsImEiOiJjbG93am83OGwwMHU0Mmpta2VsZnhpeXIwIn0.-3Yjp1ZRlaAupYQ_BK6AbA';
 
         const map = new mapboxgl.Map({
             container: 'map', // container ID
@@ -95,7 +95,7 @@
         });
 
         async function geojsonFetch() {
-            let response = await fetch('assets/state_Data.geojson');
+            let response = await fetch('assets/state_data.geojson');
             let stateData = await response.json(); 
         // other operations
 
